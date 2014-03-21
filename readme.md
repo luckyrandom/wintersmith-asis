@@ -5,8 +5,8 @@ to include file as is.
 
 [wintersmith-asis](https://github.com/luckyrandom/wintersmith-asis)
 registers to `*.asis` files and passes the files as is to the url with
-the suffix `.asis` removed. For example, to add `data.json`, you can
-include the file `data.json` by rename name it as `data.json.asis`.
+the suffix `.asis` removed. For example, you can add `data.json` to
+website by renaming the file as `data.json.asis`.
 
 ### install:
 
