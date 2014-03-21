@@ -1,0 +1,29 @@
+{
+  "name": "wintersmith-asis",
+  "version": "0.1.0",
+  "author": "Chenliang Xu <luckyrand@gmail.com>",
+  "description": "Content plugin for Wintersmith to include files asis",
+  "license": "MIT",
+  "main": "lib/",
+  "keywords": [
+    "wintersmith",
+    "wintersmith-plugin"
+  ],
+  "dependencies": {
+    "async": "~0.2.9"
+  },
+  "devDependencies": {
+    "wintersmith": "2.x",
+    "coffee-script": ">=1.5"
+  },
+  "peerDependencies": {
+    "wintersmith": "2.x"
+  },
+  "scripts": {
+    "prepublish": "./bin/compile"
+  },
+  "repository": {
+   "type": "git",
+   "url": "https://github.com/luckyrandom/wintersmith-asis.git"
+  }
+}
