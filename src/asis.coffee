@@ -5,10 +5,10 @@ module.exports = (env, callback) ->
       ### Static file handler, simply serves content as-is. Register
       to suffix asis. ###
 
-      getUrl: (base) ->
-        url = super base
-        url = url.replace /\.asis$/, ''
-        url.replace /(\/)_asis_\.(?=[^\/]*$)/, '/'
+      getFilename: () ->
+        filename = super()
+        filename = filename.replace /\.asis$/, ''
+        filename.replace /(^|\/)_asis_\.(?=[^\/]*$)/, '/'
 
       getPluginColor: ->
         'blue'
