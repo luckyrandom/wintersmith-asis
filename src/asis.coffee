@@ -7,7 +7,7 @@ module.exports = (env, callback) ->
 
       getUrl: (base) ->
         url = super base
-        url.replace /\.asis$/, ''
+        url = url.replace /\.asis$/, ''
         url.replace /(\/)_asis_\.(?=[^\/]*$)/, '/'
 
       getPluginColor: ->
