@@ -1,6 +1,6 @@
 {
   "name": "wintersmith-asis",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Chenliang Xu <luckyrand@gmail.com>",
   "description": "Content plugin for Wintersmith to include files asis",
   "license": "MIT",

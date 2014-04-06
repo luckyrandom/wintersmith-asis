@@ -8,6 +8,7 @@ module.exports = (env, callback) ->
       getUrl: (base) ->
         url = super base
         url.replace /\.asis$/, ''
+        url.replace /(\/)_asis_\.(?=[^\/]*$)/, '/'
 
       getPluginColor: ->
         'blue'
@@ -16,4 +17,5 @@ module.exports = (env, callback) ->
         callback null, new AsisFile(filepath)
 
     env.registerContentPlugin 'asis', '**/*.asis', AsisFile
+    env.registerContentPlugin 'asis', '**/_asis_.*', AsisFile
     callback()
