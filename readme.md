@@ -1,18 +1,23 @@
 # wintersmith-asis
 
-Asis plugin for [wintersmith](https://github.com/jnordberg/wintersmith)
-to include file as is.
+`wintersmith-asis` is a plugin for
+[wintersmith](https://github.com/jnordberg/wintersmith) to include
+file as is.
 
 [wintersmith-asis](https://github.com/luckyrandom/wintersmith-asis)
-registers to `*.asis` files and passes the files as is to the url with
-the suffix `.asis` removed. For example, you can add `data.json` to
-website by renaming the file as `data.json.asis`.
+registers to `*.asis` and `_asis_.*` files, and passes the files as is
+to the url with the suffix or prefix removed. For example, you can add
+`data.json` to website by including file `_asis_.data.json` in content
+directory.
 
 ### install:
 
-Install `npm install wintersmith-asis` in the project direcotry or  install `npm install -g wintersmith-asis` globally.
-
-Then add `wintersmith-asis` to `config.json` like:
+Install with command
+````
+npm install [-g] wintersmith-asis
+```
+ 
+Then add `wintersmith-asis` to the _end_ of `plugins` of `config.json`.
 
 ```json
 {
@@ -24,7 +29,9 @@ Then add `wintersmith-asis` to `config.json` like:
     "index_articles": 3
   },
   "plugins": [
+    "some_other_plugins",
     "wintersmith-asis"
   ]
 }
 ```
+
