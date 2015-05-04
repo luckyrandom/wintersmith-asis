@@ -13,7 +13,7 @@ directory.
 ### install:
 
 Install with command
-````
+```
 npm install [-g] wintersmith-asis
 ```
  
